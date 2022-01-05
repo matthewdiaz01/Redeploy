@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-scrollable_y bord"> 
+        <lightning-datatable  key-field="Id"
+            data={productswithFamily}
+            columns={columns}
+            hide-checkbox-column="true" 
+            show-row-number-column="true">
+        </lightning-datatable>
+    </div>    
+    <div class="slds-scrollable_y bord"> 
+        <lightning-datatable  key-field="Id"
+            data={productswithoutFamily}
+            columns={columns}
+            hide-checkbox-column="true" 
+            show-row-number-column="true">
+        </lightning-datatable>
+    </div>       
+</template>
