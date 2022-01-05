@@ -1,0 +1,46 @@
+<template>
+    <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+        <button class="transparent" label={btnlabel} onclick={handleclick} >Products</button>
+        <template if:false={DA}>
+        <div class="slds-dropdown slds-dropdown_left transparent">
+        <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+            <li class="slds-dropdown__item" role="presentation">
+            <a href="#" role="menuitem" tabindex="0">
+                <span class="slds-truncate" title="Menu Item One">All</span>
+            </a>
+            </li>
+            <li class="slds-dropdown__item" role="presentation" onclick={BFD}>
+            <a href="#" role="menuitem" tabindex="-1">
+                <span class="slds-truncate" title="Menu Item Two">Black Friday Deals</span>
+            </a>
+            </li>
+            <li class="slds-dropdown__item" role="presentation">
+            <a href="#" role="menuitem" tabindex="-1">
+                <span class="slds-truncate" title="Menu Item Three">Home Media </span>
+            </a>
+            </li>
+            <li class="slds-dropdown__item" role="presentation">
+            <a href="#" role="menuitem" tabindex="-1">
+                <span class="slds-truncate" title="Menu Item Four">PC Components</span>
+            </a>
+            </li>
+            <li class="slds-dropdown__item" role="presentation">
+                <a href="#" role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Menu Item Three">Networking</span>
+            </a>
+            </li>
+            <li class="slds-dropdown__item" role="presentation">
+                <a href="#" role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Menu Item Three">All-in-one Desktops</span>
+            </a>
+            </li>
+            <li class="slds-dropdown__item" role="presentation">
+                <a href="#" role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Menu Item Three">Furniture</span>
+            </a>
+            </li>
+        </ul>
+        </div>
+        </template>
+    </div>
+</template>

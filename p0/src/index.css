@@ -1,0 +1,55 @@
+.column {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  padding: 10px;
+  }
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.a:hover{
+  transition: .5;
+  color: blueviolet;
+}
+
+.a{
+  color: rgb(0, 0, 126);
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px lightsalmon;}
+  }
+  
+#logo {
+  animation: mymove 5s infinite;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  font-family: 'Bevan';
+  }
+
+#imag {
+  border-radius: 50%;
+} 
+
+.top {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  padding: 10px;
+  }
+  
+  .top:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #main{
+    margin-left: auto;
+    margin-right: 0;
+  }
