@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="inputValue" type="String" default="Empty"/>
+    <c:reason onvaluechange="{!c.getValueFromLwc}"/>
+        <aura:renderIf isTrue="{!(v.inputValue=='Contact Us')}">
+            <c:contactForm></c:contactForm>
+        </aura:renderIf>
+        <aura:renderIf isTrue="{!and(v.inputValue!='Contact Us',v.inputValue!='Empty')}">
+            <c:case Reason="{!v.inputValue}"/>
+        </aura:renderIf>
+</aura:component>	
